@@ -2,15 +2,7 @@ public class Baterai {
     private float kuatArus;
     private float hambatan;
 
-    public float getKuatArus() {
-        return kuatArus = 3;
-    }
-
-    public float getHambatan() {
-        return hambatan = 12;
-    }
-
-    public void baterai() {
+    public Baterai() {
         System.out.println("===== Hukum Ohm =====");
         System.out.println("Kuat arus yang mengalir pada suatu kawat penghantar \n" +
                 "akan berbanding lurus dengan beda potensial \n" +
@@ -18,9 +10,18 @@ public class Baterai {
                 "asalkan suhu kawat dijaga konstan. \n");
     }
 
-    public float baterai(float kuatArus, float hambatan) {
+    public Baterai(float kuatArus, float hambatan) {
+        this.kuatArus = kuatArus;
+        this.hambatan = hambatan;
+    }
 
-    return hitungTegangan();}
+    public float getKuatArus() {
+        return kuatArus;
+    }
+
+    public float getHambatan() {
+        return hambatan;
+    }
 
     public float hitungTegangan() {
      return kuatArus*hambatan;}

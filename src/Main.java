@@ -8,12 +8,12 @@
  */
 public class Main {
     public static void main(String[] args) {
-        Baterai bat = new Baterai();
+        Baterai bat = new Baterai(3,12);
+        Baterai bat2 = new Baterai();
 
-        bat.baterai();
         System.out.println("Kuat Arus : "+bat.getKuatArus()+" ampere");
         System.out.println("Hambatan : "+bat.getHambatan()+" ohm");
-        System.out.println("Hasil Tegangan : "+bat.baterai(bat.getKuatArus(),bat.getHambatan())+" volt");
+        System.out.println("Hasil Tegangan : "+bat.hitungTegangan()+" volt");
 
     }
 }
